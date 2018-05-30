@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".LocationDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dashboard_black_24dp"
+                android:id="@+id/ivLocationDetail"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lorem"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/tvLDTitle"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLdPrice"
+                android:text="Free"/>
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvLdDesc"
+                android:text="lorem"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Ticket"
+                android:inputType="number"
+                android:padding="10dp"
+                android:id="@+id/tvTicket"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:id="@+id/btnBook"
+                    android:background="@color/colorWhite"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:text="Book Ticket"/>
+
+                <Button
+                    android:id="@+id/btnCheckMap"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:text="Check Map"
+                    android:textColor="@android:color/holo_blue_dark" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
